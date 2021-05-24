@@ -87,7 +87,7 @@ def Loss(y_true, y_pred):
 
 
 if __name__ == '__main__':
-    #tf.config.run_functions_eagerly(True)
+    tf.config.run_functions_eagerly(True)
     plot_losses = PlotLosses()
 
     (x_train, _), (x_test, _) = keras.datasets.cifar100.load_data()
